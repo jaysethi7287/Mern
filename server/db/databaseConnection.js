@@ -1,7 +1,7 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
 // we first need to create a connection to the database
-const uri = process.env.atlas_uri || "";
+const uri = process.env.ATLAS_URI || "";
 
 // we need to create a client
 const client = new MongoClient(uri, {
